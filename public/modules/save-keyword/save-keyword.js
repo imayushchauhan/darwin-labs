@@ -12,8 +12,7 @@ angular
 
         let reqObj = {
             method: 'POST',
-            url: 'http://52.66.6.157:3000/save',
-            // url: 'http://localhost:3000/save',
+            url: 'http://localhost:3000/save',
             headers: {
                 'Content-Type': 'application/json'
             },
