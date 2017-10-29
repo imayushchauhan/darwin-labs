@@ -12,7 +12,8 @@ angular
         $scope.keywordList = function(){
             let reqObj = {
                 method: 'GET',
-                url: 'http://localhost:3000/get-keyword-list'
+                url: 'http://52.66.6.157:3000/get-keyword-list'
+                // url: 'http://localhost:3000/get-keyword-list'
             };
 
             $http(reqObj).then(successCallback, errorCallback);

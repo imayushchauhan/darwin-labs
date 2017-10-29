@@ -5,6 +5,7 @@ const Config = require('config');
 const Fs = require('fs');
 const Path = require('path').join;
 const BodyParser = require('body-parser');
+const Cors = require('cors')
 
 //initialize models
 const modules = Path(__dirname, 'app/modules');
@@ -18,6 +19,7 @@ const routes = require('./routes/index');
 const app = new Express();
 
 //Use the routes defined in routes
+app.use(Cors());
 app.use(BodyParser.json({limit: '50mb'}));
 app.use(Express.static(__dirname + '/images'));
 app.use(Express.static(__dirname + '/public'));
