@@ -1,0 +1,7 @@
+{
+  "development": {
+    "dbConfig": {
+      "url": "mongodb://task_one:task_one@ds237815.mlab.com:37815/task_one"
+    }
+  }
+}
