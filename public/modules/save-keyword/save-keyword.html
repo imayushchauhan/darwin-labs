@@ -1,0 +1,12 @@
+<div class="container-fluid">
+    <div class="col-md-offset-4 col-md-4 mt-50">
+        <form ng-submit="saveKeyword()">
+            <div class="form-group">
+                <input class="form-control" type="text" ng-model="keyword" placeholder="Search keyword . . .">
+            </div>
+            <br>
+            <br>
+            <button class="btn btn-primary col-md-offset-4" type="submit">{{submitButtonText}} <i class="fa fa-spinner fa-spin" ng-if="showSpinner" aria-hidden="true"></i></button>
+        </form>
+    </div>
+</div>

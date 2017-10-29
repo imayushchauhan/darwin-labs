@@ -26,7 +26,7 @@ module.exports = {
             if(compressAndFilterImageResponse && compressAndFilterImageResponse.length > 0){
                 mediaList.push({
                     mediaName: compressAndFilterImageResponse,
-                    mediaURL: '/images/' + compressAndFilterImageResponse
+                    mediaURL: 'images/' + compressAndFilterImageResponse
                 });
             }
         }
@@ -78,7 +78,7 @@ module.exports = {
         let imageList = [];
         try {
             let keywordObj = {
-                num: 2,
+                num: 15,
                 detail: true,
                 nightmare: {
                     show: true
